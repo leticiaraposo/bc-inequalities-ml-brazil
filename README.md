@@ -1,4 +1,22 @@
 
+# Geographical and Socioeconomic Inequalities in Breast Cancer Mortality: A Machine Learning Analysis in Brazil
+
+This repository contains the data and reproducible R code supporting the article:
+
+**Geographical and Socioeconomic Inequalities in Breast Cancer Mortality: A Machine Learning Analysis in Brazil**
+
+---
+
+## Overview
+
+This study investigates how geographical, socioeconomic, demographic, and health service–related factors shape the spatial distribution of breast cancer mortality in Brazil. Using Immediate Geographic Regions (IGRs) as the unit of analysis, we apply machine learning methods — including Random Forest (RF), Geographical Random Forest (GRF), and Shapley-value interpretability — to capture both global and spatially varying predictor importance.
+
+The repository provides the complete workflow for data preparation, processing, and modeling.
+
+---
+
+## Repository Structure
+
 ### **data/raw/**
 Contains the original dataset:
 - `dados_CM_Ferrete_Raposo.xlsx`
@@ -43,8 +61,3 @@ Variables include sociodemographic composition, socioeconomic structure, urbaniz
 ### **Spatial Scale**
 - Immediate Geographic Regions (IGRs) as recommended by IBGE for regional analysis
 
----
-
-
-```r
-dados <- readRDS("data/processed/base_cancer_mama_imputados_sem_correlacao_alta_ri.rds")
